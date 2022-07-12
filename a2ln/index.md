@@ -5,6 +5,6 @@
 It consists of an app on your phone and a server on your computer which communicate securely over LAN.
 
 # Getting Started
-- [Server Installation](#server)
-- [App Installation](#app)
-- [Pairing](#pairing)
+- [Server Installation](server.md)
+- [App Installation](app.md)
+- [Pairing](pairing.md)

@@ -10,17 +10,14 @@ I'm a student from Germany creating software in his spare time with ❤️.
 # Donations
 You can support my development of free and open source software by leaving a little donation.
 
-<p float="left">
-  <a href="https://www.buymeacoffee.com/patri9ck">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200">
-  </a>
-  <a href="https://www.paypal.com/donate/?hosted_button_id=FWF2R4G69WJUY">
-    <img src="https://www.paypalobjects.com/webstatic/de_DE/i/de-pp-logo-200px.png" width="200"/>
-  </a>
-  <a href="https://github.com/sponsors/patri9ck">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" width="200"/>
-  </a>
-</p>
+<a href="https://www.buymeacoffee.com/patri9ck">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200">
+</a>
+
+#
+
+- [PayPal](https://www.paypal.com/donate/?hosted_button_id=FWF2R4G69WJUY)
+- [GitHub Sponsors](https://github.com/sponsors/patri9ck)
 
 # Projects
 - [Android 2 Linux Notifications](a2ln/index.md)

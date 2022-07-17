@@ -1,6 +1,6 @@
 [< Main page](index.md)
 
-The **[A2LN server](https://github.com/patri9ck/a2ln-server)** runs on your Linux computer and is responsible for receiving notifications and displaying them using _libnotify_.
+The [A2LN server](https://github.com/patri9ck/a2ln-server) runs on your Linux computer and is responsible for receiving notifications and displaying them using _libnotify_.
 
 # Installation
 The easiest way to install the server is to use your package manager. See [this issue](https://github.com/patri9ck/a2ln-server/issues/2) for the current status of packaging.

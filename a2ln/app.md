@@ -1,6 +1,6 @@
 [< Main page](index.md)
 
-The **[A2LN app](https://github.com/patri9ck/a2ln-app)** runs on your Android phone and is responsible for sending notifications to your computer.
+The [A2LN app](https://github.com/patri9ck/a2ln-app) runs on your Android phone and is responsible for sending notifications to your computer.
 
 # Installation
 <p float="left">

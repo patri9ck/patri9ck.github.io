@@ -30,3 +30,5 @@ You probably want to auto-start it. Common options to do so are:
 - `~/.xinitrc` or `~/.xprofile`
 - Systemd user units
 - Auto-start functions of your desktop environment or window manager
+
+Also take a look at this [Arch Wiki article](https://wiki.archlinux.org/title/autostarting) about auto-starting.

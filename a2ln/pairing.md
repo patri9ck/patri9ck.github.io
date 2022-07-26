@@ -27,6 +27,7 @@ Port: 36513
 
 ==> Public Key: cZ3w(+qGK6QlCuUwIEW93M*Uum(Y?Y&2UteK?imZ
 ```
+If you use a firewall, you can specify the port of the pairing server by using the `--pairing-port` flag.
 
 Next, open the app and scan the QR code or enter the shown IP and port in the pair dialog:
 

@@ -1,4 +1,5 @@
-# Privacy Policy for Android 2 Linux Notifications
+[< Main Page](index.md)
+
 The Android 2 Linux Notifications app requests the following permissions on Android, for the following reasons:
 - `QUERY_ALL_PACKAGES`: To disable the transmission of notifications from certain apps.
 - `INTERNET`: To send the notifications to your computer.

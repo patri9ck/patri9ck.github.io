@@ -14,11 +14,19 @@ Alternatively, you can install it manually:
 ```
 $ git clone https://github.com/patri9ck/a2ln-server.git
 $ cd a2ln-server
-# make install
+$ sudo make install
 ```
-Another way is to save the `a2ln` script directly from the GitHub repository somewhere under your home directory and then to run it from there.
+Make sure there is Python 3 set up on your system.
 
-All required runtime dependencies are listed [here](https://github.com/patri9ck/a2ln-server/blob/main/requirements.txt).
+You will probably need to install all required runtime dependencies as well, either by using your package manager or by running:
+```
+$ python -m pip install -r requirements.txt
+```
+
+To uninstall it, run:
+```
+$ sudo make uninstall
+```
 
 ## Setup
 After installation, you can run the server like this:
@@ -26,6 +34,11 @@ After installation, you can run the server like this:
 $ a2ln <PORT>
 ```
 Replace `<PORT>` with the port you want to use. **You must use a port higher than 1023 if you are not root.**
+
+To get an overview of all command line options, use:
+```
+$ a2ln -h
+```
 
 You probably want to auto-start it. Common options to do so are:
 - `~/.bash_profile`, `~/.zprofile`, ...

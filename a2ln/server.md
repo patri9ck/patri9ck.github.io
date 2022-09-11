@@ -1,4 +1,4 @@
-[< Main Page](index.md)
+[< Go Back](index.md)
 
 # Server
 The [A2LN server](https://github.com/patri9ck/a2ln-server) runs on your Linux computer and is responsible for receiving notifications and displaying them using _libnotify_.

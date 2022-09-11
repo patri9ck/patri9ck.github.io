@@ -1,4 +1,4 @@
-[< Main Page](../index.md)
+[< Go Back](../index.md)
 
 # Android 2 Linux Notifications
 <img src="https://raw.githubusercontent.com/patri9ck/a2ln-app/main/images/icon-transparent.png" height="200">

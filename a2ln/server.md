@@ -16,7 +16,7 @@ $ git clone https://github.com/patri9ck/a2ln-server.git
 $ cd a2ln-server
 $ sudo make install
 ```
-Make sure there is Python 3 set up on your system.
+Make sure there is Python 3.10 or newer set up on your system.
 
 You will probably need to install all required runtime dependencies as well, either by using your package manager or by running:
 ```

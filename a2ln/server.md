@@ -29,21 +29,25 @@ $ sudo make uninstall
 ```
 
 ## Setup
-After installation, you can run the server like this:
+After installation, simply run the server like this:
 ```
-$ a2ln <PORT>
+$ a2ln
 ```
-Replace `<PORT>` with the port you want to use. **You must use a port higher than 1023 if you are not root.**
+This will start the server on the default port which is 23045.
 
 To get an overview of all command line options, use:
 ```
 $ a2ln -h
 ```
+### Autostarting
+To automatically start the server at boot, the provided systemd user unit file can be used:
+```
+$ systemctl --user enable --now a2ln
+```
 
-You probably want to auto-start it. Common options to do so are:
+Other options are:
 - `~/.bash_profile`, `~/.zprofile`, ...
 - `~/.xinitrc` or `~/.xprofile`
-- Systemd user units
 - Auto-start functions of your desktop environment or window manager
 
 Also take a look at this [Arch Wiki article](https://wiki.archlinux.org/title/autostarting) about auto-starting.

@@ -50,4 +50,4 @@ Other options are:
 - `~/.xinitrc` or `~/.xprofile`
 - Auto-start functions of your desktop environment or window manager
 
-Also take a look at this [Arch Wiki article](https://wiki.archlinux.org/title/autostarting) about auto-starting.
+Also take a look at this [Arch Wiki article](https://wiki.archlinux.org/title/autostarting) about autostarting.

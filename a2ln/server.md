@@ -9,10 +9,10 @@ There are two ways to install the server.
 ### Package Manager
 The easiest way to install the server is to use _pip_ or your system package manager. See [this issue](https://github.com/patri9ck/a2ln-server/issues/2) for the current status of packaging.
 
-Distribution | Command | Note | Maintainer
------------- | ------- | ---- | ----------
-[PyPI (pip)](https://pypi.org/project/a2ln/) | `python3 -m pip install a2ln` | No systemd user unit file | patri9ck
-[Arch Linux / Manjaro (AUR)](https://aur.archlinux.org/packages/a2ln/) | `git clone https://aur.archlinux.org/a2ln.git && cd a2ln && makepkg -sirc` | | patri9ck
+Distribution | Command | Note
+------------ | ------- | ----
+[PyPI (pip)](https://pypi.org/project/a2ln/) | `python3 -m pip install a2ln` | No systemd user unit file
+[Arch Linux / Manjaro (AUR)](https://aur.archlinux.org/packages/a2ln/) | `git clone https://aur.archlinux.org/a2ln.git && cd a2ln && makepkg -sirc` |
 
 ### Manually
 First, clone the Git repository and check it out:
@@ -26,7 +26,7 @@ For a user installation to `~/.local/bin`, run:
 ```
 $ make install
 ```
-Afterwards, if you have not already, add the following to your shell configuration file which will add the installation directory to `PATH`.
+If you have not already, add the following to your shell configuration file which will add the installation directory to `PATH`.
 ```
 export PATH="${PATH}:${HOME}/.local/bin"
 ```
@@ -37,7 +37,7 @@ Alternatively, do a system installation:
 $ sudo make install
 ```
 
-**Warning:** This will install all dependencies and can therefore result in broken permissions and conflicting behaviour with the system package manager. To avoid the installation of the dependencies, run this instead:
+**Warning:** This will install all dependencies and can therefore result in broken permissions and conflicting behaviour with the system package manager. To avoid the installation of dependencies, run this instead:
 ```
 $ sudo make install FLAGS=--no-deps
 ```

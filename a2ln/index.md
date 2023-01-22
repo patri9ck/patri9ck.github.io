@@ -21,6 +21,3 @@ Please create an issue on Github if there is a bug or a feature you would like t
 
 ## Support Development
 If you would like to support the development of this project, you can [leave a donation](../index.md#donations).
-
-## License
-A2LN is licensed under the [GNU General Public License Version 3 or later](https://www.gnu.org/licenses/gpl-3.0.html).

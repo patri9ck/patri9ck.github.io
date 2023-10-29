@@ -43,7 +43,7 @@ $ sudo make install FLAGS=--no-deps
 ```
 This means that all dependencies must be installed by yourself, e.g. by using your system package manager.
 
-## Setup
+## Usage
 After installation, simply run the server like this:
 ```
 $ a2ln
@@ -54,7 +54,14 @@ To get an overview of all command line options, use:
 ```
 $ a2ln -h
 ```
-### Autostarting
+
+### Toggling Notifications
+To toggle whether notifications are shown or not, a `SIGUSR1` signal can be sent:
+```
+killall -SIGUSR1 a2ln
+```
+
+## Autostarting
 To automatically start the server at boot, the provided systemd user unit file can be used:
 ```
 $ systemctl --user enable --now a2ln

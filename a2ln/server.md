@@ -21,7 +21,7 @@ $ git clone https://github.com/patri9ck/a2ln-server.git
 $ cd a2ln-server
 ```
 
-Afterwards, use `make` to build and install it:
+Afterwards, use _make_ to build and install it:
 ```
 $ make
 # make install

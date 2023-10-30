@@ -21,6 +21,8 @@ The notification listener might be disabled sometimes because of Huawei's strict
 
 ## Screenshots
 <p float="left">
-  <img src="https://raw.githubusercontent.com/patri9ck/a2ln-app/main/fastlane/metadata/android/en-US/images/phoneScreenshots/servers.png" width="200"/>
-  <img src="https://raw.githubusercontent.com/patri9ck/a2ln-app/main/fastlane/metadata/android/en-US/images/phoneScreenshots/apps.png" width="200"/>
+  <img src="https://raw.githubusercontent.com/patri9ck/a2ln-app/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" width="200"/>
+  <img src="https://raw.githubusercontent.com/patri9ck/a2ln-app/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png" width="200"/>
+  <img src="https://raw.githubusercontent.com/patri9ck/a2ln-app/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png" width="200"/>
+  <img src="https://raw.githubusercontent.com/patri9ck/a2ln-app/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png" width="200"/>
 </p>

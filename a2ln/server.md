@@ -4,17 +4,15 @@
 The [A2LN server](https://github.com/patri9ck/a2ln-server) runs on your Linux computer and is responsible for receiving notifications and displaying them using _libnotify_.
 
 ## Installation
-There are two ways to install the server.
-
-### Package Manager
-The easiest way to install the server is to use _pip_ or your system package manager. See [this issue](https://github.com/patri9ck/a2ln-server/issues/2) for the current status of packaging.
+There are multiple ways to install the server.
 
 Distribution | Command
 ------------ | -------
+Manually*    | see below
 [PyPI (pip)](https://pypi.org/project/a2ln/)* | `python -m pip install a2ln`
 [Arch Linux / Manjaro (AUR)](https://aur.archlinux.org/packages/a2ln/) | `git clone https://aur.archlinux.org/a2ln.git && cd a2ln && makepkg -sirc`
 
-*Does not include a systemd user unit file. Also do not forget to add `$HOME/.local/bin` to `$PATH`.
+*Does not install a systemd user unit file automatically. Also do not forget to add `$HOME/.local/bin` to `$PATH`.
 
 ### Manually
 First, clone the Git repository and check it out:
@@ -23,17 +21,14 @@ $ git clone https://github.com/patri9ck/a2ln-server.git
 $ cd a2ln-server
 ```
 
-Afterwards, use _make_ to build and install it:
+Afterwards, use _pip_ to install it:
 ```
-$ make
-# make install
+$ python -m pip install .
 ```
-
-Do not forget to install all [dependencies](https://github.com/patri9ck/a2ln-server/blob/main/requirements.txt), preferrably using your package manager.
 
 To uninstall, use:
 ```
-# make uninstall
+$ python -m pip uninstall a2ln
 ```
 
 ## Usage
@@ -44,7 +39,7 @@ $ a2ln
 
 To pair a new phone, use:
 ```
-$ a2ln pairing
+$ a2ln pair
 ```
 
 To get an overview of all command line options, execute:

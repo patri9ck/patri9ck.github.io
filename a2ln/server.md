@@ -45,6 +45,7 @@ $ a2ln pair
 To get an overview of all command line options, execute:
 ```
 $ a2ln -h
+$ a2ln pair -h
 ```
 
 ### Toggling Notifications

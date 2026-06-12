@@ -5,7 +5,7 @@
 
 **Android 2 Linux Notifications** (**A2LN**) is a way to display your Android phone notifications on your Linux computer.
 
-It consists of an app on your phone and a server on your computer which communicate securely over LAN.
+It consists of an app on your phone and a server on your computer which feature encryption, authentication, many customimzation options and a way to run a custom shell command whenever a notification arrives. That makes it very flexible and suitable for many case.
 
 ## Getting Started
 - [Server Installation](server.md)

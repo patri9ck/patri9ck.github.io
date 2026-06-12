@@ -11,8 +11,8 @@ The easiest way to install the server is to use _pip_ or your system package man
 
 Distribution | Command | Note
 ------------ | ------- | ----
-[PyPI (pip)](https://pypi.org/project/a2ln/) | `python3 -m pip install a2ln` | No systemd user unit file
-[Arch Linux / Manjaro (AUR)](https://aur.archlinux.org/packages/a2ln/) | `git clone https://aur.archlinux.org/a2ln.git && cd a2ln && makepkg -sirc` |
+[PyPI (pip)](https://pypi.org/project/a2ln/) | `python -m pip install a2ln` | No systemd user unit file
+[Arch Linux / Manjaro (AUR)](https://aur.archlinux.org/packages/a2ln/) | `git clone https://aur.archlinux.org/a2ln.git && cd a2ln && makepkg -sirc`
 
 ### Manually
 First, clone the Git repository and check it out:
@@ -21,36 +21,31 @@ $ git clone https://github.com/patri9ck/a2ln-server.git
 $ cd a2ln-server
 ```
 
-#### Recommended: User Installation
-For a user installation to `~/.local/bin`, run:
+Afterwards, use `make` to build and install it:
 ```
-$ make install
-```
-If you have not already, add the following to your shell configuration file which will add the installation directory to `PATH`.
-```
-export PATH="${PATH}:${HOME}/.local/bin"
+$ make
+# make install
 ```
 
-#### System Installation
-Alternatively, do a system installation:
-```
-$ sudo make install
-```
+Do not forget to install all [dependencies](https://github.com/patri9ck/a2ln-server/blob/main/requirements.txt), preferrably using your package manager.
 
-**Warning:** This will install all dependencies and can therefore result in broken permissions and conflicting behaviour with the system package manager. To avoid the installation of dependencies, run this instead:
+To uninstall, use:
 ```
-$ sudo make install FLAGS=--no-deps
+# make uninstall
 ```
-This means that all dependencies must be installed by yourself, e.g. by using your system package manager.
 
 ## Usage
-After installation, simply run the server like this:
+After installation, simply run the notification server like this:
 ```
 $ a2ln
 ```
-This will start the server on the default port which is 23045.
 
-To get an overview of all command line options, use:
+To pair a new phone, use:
+```
+$ a2ln pairing
+```
+
+To get an overview of all command line options, execute:
 ```
 $ a2ln -h
 ```
@@ -58,13 +53,13 @@ $ a2ln -h
 ### Toggling Notifications
 To toggle whether notifications are shown or not, a `SIGUSR1` signal can be sent:
 ```
-killall -SIGUSR1 a2ln
+$ killall -SIGUSR1 a2ln
 ```
 
 ## Autostarting
 To automatically start the server at boot, the provided systemd user unit file can be used:
 ```
-$ systemctl --user enable --now a2ln
+# systemctl enable --now a2ln
 ```
 
 Other options are:

@@ -56,7 +56,7 @@ $ killall -SIGUSR1 a2ln
 ## Autostarting
 To automatically start the server at boot, the provided systemd user unit file can be used:
 ```
-# systemctl enable --now a2ln
+$ systemctl --user enable --now a2ln
 ```
 
 Other options are:

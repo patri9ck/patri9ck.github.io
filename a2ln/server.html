@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server &mdash; Android 2 Linux Notifications</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a class="back-link" href="index.html">&larr; Back</a>
+
+        <h1 class="page-title">Server</h1>
+
+        <div class="content">
+            <p>The <a href="https://github.com/patri9ck/a2ln-server">A2LN server</a> runs on your Linux computer and is responsible for receiving notifications and displaying them using <em>libnotify</em>.</p>
+
+            <h3>Installation</h3>
+            <p>There are multiple ways to install the server.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Distribution</th>
+                        <th>Command</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Manually*</td>
+                        <td>see below</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pypi.org/project/a2ln/">PyPI (pip)</a>*</td>
+                        <td><code>python -m pip install a2ln</code></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://aur.archlinux.org/packages/a2ln/">Arch Linux / Manjaro (AUR)</a></td>
+                        <td><code>git clone https://aur.archlinux.org/a2ln.git &amp;&amp; cd a2ln &amp;&amp; makepkg -sirc</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>*Does not install a systemd user unit file automatically. Also do not forget to add <code>$HOME/.local/bin</code> to <code>$PATH</code>.</p>
+
+            <h4>Manually</h4>
+            <p>First, clone the Git repository and check it out:</p>
+            <pre><code>$ git clone https://github.com/patri9ck/a2ln-server.git
+$ cd a2ln-server</code></pre>
+            <p>Afterwards, use <em>pip</em> to install it:</p>
+            <pre><code>$ python -m pip install .</code></pre>
+            <p>To uninstall, use:</p>
+            <pre><code>$ python -m pip uninstall a2ln</code></pre>
+
+            <h3>Usage</h3>
+            <p>After installation, simply run the notification server like this:</p>
+            <pre><code>$ a2ln</code></pre>
+            <p>To pair a new phone, use:</p>
+            <pre><code>$ a2ln pair</code></pre>
+            <p>To get an overview of all command line options, execute:</p>
+            <pre><code>$ a2ln -h
+$ a2ln pair -h</code></pre>
+
+            <h4>Toggling Notifications</h4>
+            <p>To toggle whether notifications are shown or not, a <code>SIGUSR1</code> signal can be sent:</p>
+            <pre><code>$ killall -SIGUSR1 a2ln</code></pre>
+
+            <h3>Autostarting</h3>
+            <p>To automatically start the server at boot, the provided systemd user unit file can be used:</p>
+            <pre><code>$ systemctl --user enable --now a2ln</code></pre>
+            <p>Other options are:</p>
+            <ul>
+                <li><code>~/.bash_profile</code>, <code>~/.zprofile</code>, &hellip;</li>
+                <li><code>~/.xinitrc</code> or <code>~/.xprofile</code></li>
+                <li>Auto-start functions of your desktop environment or window manager</li>
+            </ul>
+            <p>Also take a look at this <a href="https://wiki.archlinux.org/title/autostarting">Arch Wiki article</a> about autostarting.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #fff;
+    color: #111;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.container {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 64px 24px 80px;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+section {
+    margin-bottom: 52px;
+}
+
+p {
+    color: #333;
+    margin-bottom: 12px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: #111;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: #555;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin-bottom: 32px;
+}
+
+.back-link {
+    display: inline-block;
+    font-size: 0.875rem;
+    color: #777;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.back-link:hover {
+    color: #111;
+}
+
+/* CV / About */
+.cv-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cv-entry .role {
+    font-weight: 500;
+    color: #111;
+}
+
+.cv-entry .meta {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* Projects */
+.project-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-list li {
+    border-left: 2px solid #e8e8e8;
+    padding-left: 16px;
+}
+
+.project-list .project-name {
+    font-weight: 500;
+    color: #111;
+}
+
+.project-list .project-desc {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 2px;
+}
+
+/* Inner pages */
+.page-icon {
+    height: 80px;
+    margin-bottom: 24px;
+    display: block;
+}
+
+h1.page-title {
+    margin-bottom: 16px;
+}
+
+.content h3 {
+    margin-top: 28px;
+    margin-bottom: 8px;
+}
+
+.content h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.content p {
+    margin-bottom: 12px;
+}
+
+.content ul, .content ol {
+    padding-left: 20px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.content li {
+    margin-bottom: 4px;
+}
+
+.content code {
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', monospace;
+    font-size: 0.85em;
+    background: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #111;
+}
+
+.content pre {
+    background: #f4f4f4;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+    overflow-x: auto;
+}
+
+.content pre code {
+    background: none;
+    padding: 0;
+    font-size: 0.875rem;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+}
+
+.content th {
+    text-align: left;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-bottom: 2px solid #e8e8e8;
+    color: #111;
+}
+
+.content td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;
+}
+
+.content td code {
+    font-size: 0.8rem;
+}
+
+.badge-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.badge-row a {
+    display: inline-block;
+}
+
+.badge-row img {
+    height: 56px;
+    width: auto;
+}
+
+.screenshot-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.screenshot-row img {
+    width: 140px;
+    border-radius: 8px;
+    border: 1px solid #e8e8e8;
+}

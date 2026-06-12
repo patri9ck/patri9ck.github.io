@@ -1,6 +1,6 @@
 [< Main page](index.md)
 
-To ensure a secure connection including authentication and encryption, your **[A2LN server](server.md)** must be paired with your **[A2LN app](app.md)**.
+To ensure a secure connection including authentication and encryption, you must pair your app with your server.
 
 Get started by running the server:
 ```
@@ -27,6 +27,6 @@ Client public key: q(8S=6Sd6tkOaHm(.}u6m)jnC1i0pj3-SS+K9Kb*
 Accept? (Yes/No): 
 ```
 
-Simply type `Yes`. The public key is saved under `$HOME/.a2ln/clients/192.168.178.33.key`.
+Simply type `Yes` and press enter. The public key is saved under `$HOME/.a2ln/clients/192.168.178.33.key` in this case.
 
 To finish the pairing process, confirm the newly paired device inside the app.

@@ -15,6 +15,7 @@ $ git clone https://github.com/patri9ck/a2ln-server.git
 $ cd a2ln-server
 # make install
 ```
+Another way is to save the `a2ln` script directly from the GitHub repository somewhere under your home directory and then to run it from there.
 
 All required runtime dependencies are listed [here](https://github.com/patri9ck/a2ln-server/blob/main/requirements.txt).
 

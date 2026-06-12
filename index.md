@@ -5,8 +5,6 @@ I'm Patrick - a student from Germany creating software in his spare time with ‚ù
 ## Social Media
 - [GitHub: patri9ck](https://github.com/patri9ck)
 - [Reddit: u/patri9ck](https://www.reddit.com/user/patri9ck)
-- [Twitter: @patri9ck](https://twitter.com/patri9ck)
-- [YouTube](https://www.youtube.com/channel/UCcF8MpcjvDxHW2XUps2jBvw)
 
 ## Donations
 You can support my development of free and open source software by leaving a little donation.

@@ -8,3 +8,4 @@ It consists of an app on your phone and a server on your computer which communic
 - [Server Installation](server.md)
 - [App Installation](app.md)
 - [Pairing](pairing.md)
+- [Privacy Policy](privacy-policy.md)

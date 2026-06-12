@@ -9,10 +9,12 @@ There are two ways to install the server.
 ### Package Manager
 The easiest way to install the server is to use _pip_ or your system package manager. See [this issue](https://github.com/patri9ck/a2ln-server/issues/2) for the current status of packaging.
 
-Distribution | Command | Note
------------- | ------- | ----
-[PyPI (pip)](https://pypi.org/project/a2ln/) | `python -m pip install a2ln` | No systemd user unit file
+Distribution | Command
+------------ | -------
+[PyPI (pip)](https://pypi.org/project/a2ln/)* | `python -m pip install a2ln`
 [Arch Linux / Manjaro (AUR)](https://aur.archlinux.org/packages/a2ln/) | `git clone https://aur.archlinux.org/a2ln.git && cd a2ln && makepkg -sirc`
+
+*Does not include a systemd user unit file. Also do not forget to add `$HOME/.local/bin` to `$PATH`.
 
 ### Manually
 First, clone the Git repository and check it out:

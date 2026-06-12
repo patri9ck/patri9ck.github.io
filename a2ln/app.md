@@ -13,11 +13,14 @@ The [A2LN app](https://github.com/patri9ck/a2ln-app) runs on your Android phone 
   </a>
 </p>
 
-Bleeding edge APKs can be found on [GitHub Actions](https://github.com/patri9ck/a2ln-app/actions) as artifacts.
+Bleeding edge debug APKs can be found on [GitHub Actions](https://github.com/patri9ck/a2ln-app/actions) as artifacts.
 
 ## Notes on Specific Phones
 ### Huawei
 The notification listener might be disabled sometimes because of Huawei's strict energy saving methods. To encounter this problem, go to _Settings_ > _Battery_ > _App launch_, select *Android 2 Linux Notifications* and enable _Secondary launch_ as well as _Run in background_.
+
+## Privacy Policy
+A privacy policy is required by Google Play. You can find it [here](privacy-policy.md).
 
 ## Screenshots
 <p float="left">

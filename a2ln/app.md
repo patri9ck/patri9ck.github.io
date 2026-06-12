@@ -19,9 +19,6 @@ Bleeding edge debug APKs can be found on [GitHub Actions](https://github.com/pat
 ### Huawei
 The notification listener might be disabled sometimes because of Huawei's strict energy saving methods. To encounter this problem, go to _Settings_ > _Battery_ > _App launch_, select *Android 2 Linux Notifications* and enable _Secondary launch_ as well as _Run in background_.
 
-## Privacy Policy
-A privacy policy is required by Google Play. You can find it [here](privacy-policy.md).
-
 ## Screenshots
 <p float="left">
   <img src="https://raw.githubusercontent.com/patri9ck/a2ln-app/main/fastlane/metadata/android/en-US/images/phoneScreenshots/servers.png" width="200"/>

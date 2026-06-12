@@ -1,4 +1,4 @@
-[< Main Page](index.md)
+[< Go Back](app.md)
 
 # Privacy Policy
 The Android 2 Linux Notifications app requests the following permissions on Android, for the following reasons:

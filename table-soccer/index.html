@@ -38,7 +38,7 @@
             <p style="font-size:0.8rem;color:#888;margin-bottom:16px;">A valid set with 32 correct rod hits across all cameras, including rod angles visualized as dials.</p>
 
             <h3>Neural Network</h3>
-            <p>A neural network with a MobileNetV3-Small backbone was trained on the ground truth data. Its input is a single four-channel image formed by stacking the grayscale images from all four cameras. It outputs 27 values: per-rod displacement, per-rod sin/cos (from which the angle is reconstructed via <code>atan2</code>), ball x/y position, and ball visibility as a confidence value.</p>
+            <p>Several network architectures were trained and evaluated before settling on the final model. A neural network with a MobileNetV3-Small backbone was trained on the ground truth data. Its input is a single four-channel image formed by stacking the grayscale images from all four cameras. It outputs 27 values: per-rod displacement, per-rod sin/cos (from which the angle is reconstructed via <code>atan2</code>), ball x/y position, and ball visibility as a confidence value.</p>
             <p>Inference takes under 1&nbsp;ms on GPU. The model is efficient enough to meet the 100&nbsp;fps requirement on CPU alone.</p>
 
             <img src="loss_curve.png" alt="Training and validation loss curve" style="width:100%;border-radius:6px;border:1px solid #e8e8e8;margin:8px 0 4px;">
@@ -49,6 +49,9 @@
 
             <h3>Runtime</h3>
             <p>The final system runs in C++ using ONNX Runtime with the model executing on CPU. In addition to the raw network outputs, the runtime computes derived metrics: goal detection, throw-in detection, and velocity for the ball, rods, and rod angles.</p>
+
+            <h3>Outlook</h3>
+            <p>Ball detection accuracy in particular could be improved with a larger and more diverse ground truth dataset. Due to time constraints as a university project with a fixed deadline, this was not pursued further.</p>
         </div>
     </div>
 </body>
